@@ -1,4 +1,24 @@
 ---
 label: Products
 hide_body: true
-fields: []
+fields:
+- name: product_name
+  type: text
+  config:
+    required: false
+  label: Product Name
+- name: product_id
+  type: number
+  label: Product Id
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
